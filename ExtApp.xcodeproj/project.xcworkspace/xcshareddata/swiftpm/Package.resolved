@@ -6,7 +6,16 @@
       "location" : "https://github.com/jzwc/external-package.git",
       "state" : {
         "branch" : "main",
-        "revision" : "405f33e862031dc352c0a8cf9724af3f7f57a8c9"
+        "revision" : "d75c156a2e93d6a844540c1dcacd8053ddc5272b"
+      }
+    },
+    {
+      "identity" : "published-product",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/jzwc/published-product",
+      "state" : {
+        "branch" : "main",
+        "revision" : "8d2a6a867fa5087bc64fe68a066a489762ecd9c6"
       }
     }
   ],

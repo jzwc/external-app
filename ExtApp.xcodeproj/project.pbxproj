@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7D6F04822AD1ADA600BCD69A /* ExternalPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7D6F04812AD1ADA600BCD69A /* ExternalPackage */; };
-		7D6F04832AD1ADB000BCD69A /* ExternalPackage in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7D6F04812AD1ADA600BCD69A /* ExternalPackage */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		7D8BD62D2AD1B66400601F5B /* PublishedProductPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7D8BD62C2AD1B66400601F5B /* PublishedProductPackage */; };
+		7D8BD6302AD1B76900601F5B /* ExternalPackage in Frameworks */ = {isa = PBXBuildFile; productRef = 7D8BD62F2AD1B76900601F5B /* ExternalPackage */; };
+		7D8BD6312AD1B76F00601F5B /* ExternalPackage in Embed Frameworks */ = {isa = PBXBuildFile; productRef = 7D8BD62F2AD1B76900601F5B /* ExternalPackage */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		7DF9C1CB2AD16CDD0028393A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF9C1CA2AD16CDD0028393A /* AppDelegate.swift */; };
 		7DF9C1CD2AD16CDD0028393A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF9C1CC2AD16CDD0028393A /* SceneDelegate.swift */; };
 		7DF9C1CF2AD16CDD0028393A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF9C1CE2AD16CDD0028393A /* ViewController.swift */; };
@@ -24,7 +25,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7D6F04832AD1ADB000BCD69A /* ExternalPackage in Embed Frameworks */,
+				7D8BD6312AD1B76F00601F5B /* ExternalPackage in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -47,7 +48,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D6F04822AD1ADA600BCD69A /* ExternalPackage in Frameworks */,
+				7D8BD6302AD1B76900601F5B /* ExternalPackage in Frameworks */,
+				7D8BD62D2AD1B66400601F5B /* PublishedProductPackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -110,7 +112,8 @@
 			);
 			name = ExtApp;
 			packageProductDependencies = (
-				7D6F04812AD1ADA600BCD69A /* ExternalPackage */,
+				7D8BD62C2AD1B66400601F5B /* PublishedProductPackage */,
+				7D8BD62F2AD1B76900601F5B /* ExternalPackage */,
 			);
 			productName = ExtApp;
 			productReference = 7DF9C1C72AD16CDD0028393A /* ExtApp.app */;
@@ -141,7 +144,8 @@
 			);
 			mainGroup = 7DF9C1BE2AD16CDD0028393A;
 			packageReferences = (
-				7D6F04802AD1ADA600BCD69A /* XCRemoteSwiftPackageReference "external-package" */,
+				7D8BD62B2AD1B66400601F5B /* XCRemoteSwiftPackageReference "published-product" */,
+				7D8BD62E2AD1B76900601F5B /* XCRemoteSwiftPackageReference "external-package" */,
 			);
 			productRefGroup = 7DF9C1C82AD16CDD0028393A /* Products */;
 			projectDirPath = "";
@@ -405,7 +409,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		7D6F04802AD1ADA600BCD69A /* XCRemoteSwiftPackageReference "external-package" */ = {
+		7D8BD62B2AD1B66400601F5B /* XCRemoteSwiftPackageReference "published-product" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jzwc/published-product";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		7D8BD62E2AD1B76900601F5B /* XCRemoteSwiftPackageReference "external-package" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jzwc/external-package.git";
 			requirement = {
@@ -416,9 +428,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		7D6F04812AD1ADA600BCD69A /* ExternalPackage */ = {
+		7D8BD62C2AD1B66400601F5B /* PublishedProductPackage */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 7D6F04802AD1ADA600BCD69A /* XCRemoteSwiftPackageReference "external-package" */;
+			package = 7D8BD62B2AD1B66400601F5B /* XCRemoteSwiftPackageReference "published-product" */;
+			productName = PublishedProductPackage;
+		};
+		7D8BD62F2AD1B76900601F5B /* ExternalPackage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7D8BD62E2AD1B76900601F5B /* XCRemoteSwiftPackageReference "external-package" */;
 			productName = ExternalPackage;
 		};
 /* End XCSwiftPackageProductDependency section */

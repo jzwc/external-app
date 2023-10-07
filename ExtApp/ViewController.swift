@@ -19,7 +19,7 @@ class ViewController: UIViewController {
 
         var text = [String]()
 
-        text.append(ExternalDependency.code)
+        text.append(ExternalLibrary.code)
         text.append(PublishedFramework.Framework.code)
 
         label.text = text.joined(separator: "\n\n")
