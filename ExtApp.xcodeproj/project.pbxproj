@@ -413,7 +413,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/jzwc/published-product";
 			requirement = {
-				branch = main;
+				branch = "before-protobuff";
 				kind = branch;
 			};
 		};

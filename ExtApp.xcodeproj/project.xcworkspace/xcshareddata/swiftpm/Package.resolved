@@ -14,7 +14,7 @@
       "kind" : "remoteSourceControl",
       "location" : "https://github.com/jzwc/published-product",
       "state" : {
-        "branch" : "main",
+        "branch" : "before-protobuff",
         "revision" : "8d2a6a867fa5087bc64fe68a066a489762ecd9c6"
       }
     }
